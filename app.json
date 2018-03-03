@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/cat/cat"
+    "pages/cat/cat",
+    "pages/self/self"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -18,6 +19,10 @@
       {
         "pagePath": "pages/cat/cat",
         "text": "分类"
+      },
+      {
+        "pagePath": "pages/self/self",
+        "text": "我的"
       }
     ]
   },

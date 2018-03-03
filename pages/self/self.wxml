@@ -1,0 +1,5 @@
+<!--pages/self/self.wxml-->
+<view>
+	<text>{{user}}</text>
+	<button type="button" loading="ture">登陆</button>
+</view>
