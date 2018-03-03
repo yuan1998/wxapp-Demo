@@ -1,4 +1,5 @@
 <!--pages/cat/cat.wxml-->
+
 <template name="cat-card">
 	<view class="card-item">
 		<view class="card-icon">
