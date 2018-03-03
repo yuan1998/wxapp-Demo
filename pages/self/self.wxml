@@ -1,5 +1,35 @@
 <!--pages/self/self.wxml-->
 <view>
-	<text>{{user}}</text>
-	<button type="button" loading="ture">登陆</button>
+	<view class="user-bar">
+		<view class="flex-wra flex-center">
+			<view class="flex-col" bindtap="avatarEvent">
+				<view class="col">
+					<image src="{{user ? user.avatarUrl : '../../storage/img/notUser.png'}}" class="user-avatar"></image>
+				</view>
+				<view class="col center">
+					<text class="user-nick-name">{{user ? user.nickName : "Click Login"}}</text>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="user-control-panel">
+		<view class="flex-wra">
+			<view class="flex-row">
+				<view class="col hr"></view>
+				<view class="col item">Test</view>
+				<view class="col item">Test</view>
+				<view class="col item">Test</view>
+				<view class="col hr"></view>
+				<view class="col item last">Logout</view>
+			</view>
+		</view>
+		<view class="info center">
+			<view class="customer">
+				24小时客服: +86 10086;
+			</view>
+			<view class="">
+				xxxxxxxxx
+			</view>
+		</view>
+	</view>
 </view>
