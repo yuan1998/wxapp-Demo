@@ -1,25 +1,23 @@
 <!--pages/cat/cat.wxml-->
 
 <template name="cat-card">
-	<view class="card-item">
-		<view class="card-icon">
-			<text class="">
-				&#x1F601;
-			</text>
-		</view>
-		<view class="card-text">
-			<text class="">{{test}}</text>
-		</view>
-	</view>
+    <view class="card-item center">
+        <view class="card-icon">
+            <text class="" decode="true">
+                &#x1F601;
+            </text>
+        </view>
+        <view class="card-text">
+            <text class="">{{text}}</text>
+        </view>
+    </view>
 </template>
 
 <view class="container">
-	<view class="cat-bar flex-wra">
-		<view class="flex-row">
-			<view class="col" wx:for="{{cats}}">
-				<template  is="cat-card" data="{{...item}}"></template>
-			</view>
-		</view>
-	</view>
-</view>`
+    <view class="cat-bar flex-wra flex-row flex-wrap">
+        <view class="col-4" wx:for="{{cats}}" wx:key="this">
+            <template  is="cat-card" data="{{...item}}"></template>
+        </view>
+    </view>
+</view>
 

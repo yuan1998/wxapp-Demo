@@ -1,1 +1,11 @@
 /* pages/cat/cat.wxss */
+.card-item,
+.container{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.card-item{
+    border:1px solid #e8e8e8;
+    margin-top: 5px;
+    border-radius:5px;
+}
